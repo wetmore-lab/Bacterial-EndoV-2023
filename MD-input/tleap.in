@@ -3,12 +3,12 @@ source leaprc.DNA.OL15
 source leaprc.gaff
 source leaprc.water.tip3p
 loadamberparams frcmod.ionsjc_tip3p
-loadamberparams magnesium.frcmod
-loadamberprep magnesium.prep
-loadoff Hypoxanthine.lib
-loadamberparams Hypoxanthine.frcmod
+loadamberparams magnesium-parameters.frcmod
+loadamberprep magnesium-parameters.prep
+loadoff Inosine-parameters.lib
+loadamberparams Inosine-parameters.frcmod
 
-Mol1 = loadpdb 2w35-IDL.pdb
+Mol1 = loadpdb 2w35-IDL-starting-model-for-MD.pdb
 check Mol1
 
 addions Mol1 Na+ 1
@@ -16,6 +16,6 @@ check Mol1
 solvateoct Mol1 TIP3PBOX 10.0 
 
 savepdb Mol1 2w35-IDL-sol-neutral-DNA.pdb
-saveamberparm Mol1 2w35-IDL.prmtop 2w35-IDL.inpcrd
+saveamberparm Mol1 2w35-IDL-topology.prmtop 2w35-IDL-input-coordinates.inpcrd
 quit
 
