@@ -1,3 +1,4 @@
+#  Bacterial-EndoV-2023
 The file naming is as follows: 
 
 The MD-input directory contains the input files used to prepare the system for running MD simulations and the tleap script used to generate those input files. In the file names, 2w35 refers to the PDB ID of the bacterial EndoV crystal structure from which the starting models for MD were built. "DL" refers to the EndoV model involving direct metal-substrate ligation and "IDL" refers to the model involving indirect metal-substrate ligation.
